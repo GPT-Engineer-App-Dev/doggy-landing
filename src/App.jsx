@@ -1,7 +1,7 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Home, Info, Services, Contact } from "lucide-react";
+import { Home, Info, Scissors, Bed, Contact } from "lucide-react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Layout from "./layouts/navbar"; // Use the navbar layout
 import Index from "./pages/Index.jsx";
@@ -21,7 +21,12 @@ export const navItems = [
   {
     title: "Services",
     to: "/services",
-    icon: <Services className="h-4 w-4" />,
+    icon: <Scissors className="h-4 w-4" />,
+  },
+  {
+    title: "Boarding",
+    to: "/boarding",
+    icon: <Bed className="h-4 w-4" />,
   },
   {
     title: "Contact",
